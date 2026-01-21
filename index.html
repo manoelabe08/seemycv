@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8" />
     <title>CV Manoel Abe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-.competences-li {
-    position: relative;
-    padding-left: 48px;
-    font-weight: 600;
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center; /* Aligne verticalement le cercle et le texte */
-    gap: 12px;
-}
+        .competences-li {
+            position: relative;
+            padding-left: 48px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-.competences-li svg {
-    position: absolute;
-    left: 2px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    fill: none;
-    display: flex;
-    align-items: center; /* Aligne verticalement le cercle et le texte */
-    gap: 12px;
-}
+        .competences-li svg {
+            position: absolute;
+            left: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            fill: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-.cbar-bg {
-    stroke: #e6ecef;
-    stroke-width: 5;
-}
+        .cbar-bg {
+            stroke: #e6ecef;
+            stroke-width: 5;
+        }
 
-.cbar {
-    stroke: #49dfba;
-    stroke-width: 5;
-    stroke-linecap: round;
-    transition: stroke-dashoffset 0.5s ease;
-}
+        .cbar {
+            stroke: #49dfba;
+            stroke-width: 5;
+            stroke-linecap: round;
+            transition: stroke-dashoffset 0.5s ease;
+        }
 
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -46,6 +47,7 @@
             background: #f2f4f9;
             color: #222;
         }
+
         .cv-wrapper {
             max-width: 1000px;
             background: #fff;
@@ -55,9 +57,10 @@
             display: flex;
             overflow: hidden;
             position: relative;
-  background: #fff url('URL_DESIGN_RESEAU.svg') no-repeat center;
-  background-size: cover;
+            background: #fff url('URL_DESIGN_RESEAU.svg') no-repeat center;
+            background-size: cover;
         }
+
         .cv-left {
             background: linear-gradient(135deg, #3249a6 60%, #49dfba 100%);
             color: #fff;
@@ -68,6 +71,7 @@
             align-items: center;
             padding: 36px 24px 36px 24px;
         }
+
         .profile-pic {
             width: 130px;
             height: 130px;
@@ -78,34 +82,41 @@
             margin-bottom: 24px;
             transition: transform .2s;
         }
+
         .profile-pic:hover {
             transform: scale(1.07) rotate(-2deg);
         }
+
         .cv-left h1 {
             font-size: 1.8rem;
             letter-spacing: 1px;
             margin-bottom: 5px;
         }
+
         .cv-left .subtitle {
             font-size: 1.06em;
             font-weight: 300;
             letter-spacing: .5px;
             margin-bottom: 25px;
+            text-align: center;
         }
+
         .cv-left .contact {
             margin: 20px 0;
             font-size: 0.99em;
         }
+
         .cv-left .contact div {
             margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 8px;
         }
+
         .cv-left .contact i {
             width: 22px;
         }
-        /* Styles pour la section réseaux sociaux */
+
         .socials {
             display: flex;
             gap: 24px;
@@ -113,11 +124,13 @@
             width: 100%;
             justify-content: center;
         }
+
         .social-column {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
+
         .social-link {
             display: flex;
             align-items: center;
@@ -130,30 +143,35 @@
             text-decoration: none;
             transition: background 0.25s ease;
         }
+
         .social-link img {
             width: 24px;
             height: 24px;
             border-radius: 4px;
             background: #fff;
         }
+
         .social-link:hover {
             background: #3249a6;
         }
-        /* Langues */
+
         .langues {
             margin-top: 30px;
             width: 100%;
         }
+
         .langue-bar {
             display: flex;
             align-items: center;
             margin-bottom: 10px;
             gap: 10px;
         }
+
         .langue-label {
             min-width: 80px;
             font-weight: bold;
         }
+
         .bar-bg {
             background: #e6ecef;
             border-radius: 7px;
@@ -161,22 +179,25 @@
             height: 10px;
             overflow: hidden;
         }
+
         .bar-fg {
             height: 100%;
             background: #49dfba;
             border-radius: 7px;
             transition: width .4s;
         }
+
         .bar-text {
             font-size: 0.92em;
             margin-left: 8px;
-            width:34px;
+            width: 34px;
         }
-        /* Certifications */
+
         .certifications {
             margin-top: 30px;
             width: 100%;
         }
+
         .certif-item {
             display: flex;
             align-items: center;
@@ -189,28 +210,33 @@
             min-height: 47.6px;
             border-radius: 50%;
             background: #fff;
-            display: flex; align-items: center; justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             box-shadow: 0 1px 6px #1a4a5077;
             font-size: 34px;
+            color: #3249a6;
+            font-weight: bold;
         }
-        .certif-item-logo img {
-            width: 47.6px;
-            height: 47.6px;
-            border-radius: 50%;
-            display:block;
-        }
+
         .certif-item-content {
             display: flex;
             flex-direction: column;
         }
+
         .certif-title {
-            font-weight: bold; text-transform: uppercase; font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
             color: #fff;
         }
+
         .certif-org {
-            font-style: italic; font-size: 0.95em; color: #d1e1e8;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #d1e1e8;
         }
-        /* Bouton téléchargement */
+
         .download-cv-action {
             display: inline-block;
             margin-top: 15px;
@@ -226,15 +252,17 @@
             box-shadow: 0 2px 14px #49dfba57;
             cursor: pointer;
         }
+
         .download-cv-action:hover {
             background: #3249a6;
         }
-        /* Partie droite */
+
         .cv-right {
             width: 70%;
             padding: 48px 44px 44px 44px;
             background: #fff;
         }
+
         h2 {
             color: #2e4198;
             font-size: 1.25em;
@@ -242,29 +270,46 @@
             border-left: 4px solid #49dfba;
             padding-left: 13px;
         }
+
         .section {
             margin-bottom: 30px;
             animation: fadeinup .8s;
         }
+
         @keyframes fadeinup {
-            from { opacity: 0; transform: translateY(18px);}
-            to { opacity: 1; transform: translateY(0);}
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .profil {
-            font-size: 1.12em;
+            font-size: 1.05em;
             background: #f4f7fc;
             border-left: 5px solid #49dfba;
             margin-bottom: 25px;
             padding: 18px 20px 18px 24px;
             border-radius: 7px;
         }
+
         .list-cv {
             list-style: none;
-            margin: 0; padding: 0;
+            margin: 0;
+            padding: 0;
         }
+
         .cv-bullet {
-            display: flex; align-items: flex-start; gap: 18px; margin-bottom: 21px;
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            margin-bottom: 21px;
         }
+
         .cv-bullet .circle {
             width: 28px;
             height: 28px;
@@ -274,40 +319,48 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-shrink:0;
+            flex-shrink: 0;
         }
+
         .cv-bullet .circle img {
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            display:block;
+            display: block;
         }
-        .xp-title, .formation-title {
-            font-weight: bold; color: #234981; font-size: 1em;
+
+        .xp-title,
+        .formation-title {
+            font-weight: bold;
+            color: #234981;
+            font-size: 1em;
         }
-        .xp-date, .formation-date {
+
+        .xp-date,
+        .formation-date {
             color: #7cb;
-            font-size: .98em;
-            margin-left: 8px;
+            font-size: .95em;
+            margin-left: 2px;
+            display: block;
+            margin-top: 3px;
         }
+
         .xp-subtitle {
             font-style: italic;
-            font-size: 0.98em;
+            font-size: 0.94em;
+            margin-top: 4px;
         }
+
         .competences-list {
             display: grid;
             grid-template-columns: 1fr;
             gap: 10px 35px;
         }
-        .competences-li {
-            margin-bottom: 4px;
-        }
 
-
-        /* Projets / Réalisations */
         .projects-section {
             margin-top: 30px;
         }
+
         .projects-title {
             color: #2e4198;
             font-size: 1.23em;
@@ -315,11 +368,13 @@
             border-left: 4px solid #49dfba;
             padding-left: 13px;
         }
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 18px;
         }
+
         .project-card {
             background: #f4f7fc;
             border-radius: 14px;
@@ -332,6 +387,7 @@
             min-height: 200px;
             position: relative;
         }
+
         .project-card img {
             width: 56px;
             height: 56px;
@@ -340,9 +396,11 @@
             object-fit: cover;
             box-shadow: 0 1px 7px #23498144;
         }
+
         .project-desc {
             margin: 2px 0 7px 0;
         }
+
         .voir-plus-btn {
             background: #49dfba;
             color: #fff;
@@ -354,21 +412,24 @@
             margin-top: 2px;
             transition: background .17s;
         }
+
         .voir-plus-btn:hover {
             background: #3249a6;
         }
-        /* Popup overlay */
+
         .popup-overlay {
             display: none;
             position: fixed;
             z-index: 999;
-            left: 0; top: 0;
+            left: 0;
+            top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(44,54,94,.53);
+            background: rgba(44, 54, 94, .53);
             justify-content: center;
             align-items: center;
         }
+
         .popup-content {
             background: #fff;
             border-radius: 12px;
@@ -380,10 +441,12 @@
             padding: 24px 25px;
             margin: 16px;
         }
+
         .close-popup {
             margin-top: 12px;
             text-align: right;
         }
+
         .close-popup button {
             background: #49dfba;
             color: #fff;
@@ -394,15 +457,20 @@
             cursor: pointer;
             transition: background .17s;
         }
+
         .close-popup button:hover {
             background: #3249a6;
         }
 
         @media (max-width: 900px) {
-            .projects-grid { grid-template-columns: 1fr;}
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
             .competences-list {
                 grid-template-columns: 1fr;
             }
+
             .socials {
                 flex-direction: column;
                 gap: 15px;
@@ -410,125 +478,164 @@
         }
 
         @media (max-width: 800px) {
-            .cv-wrapper {flex-direction: column;}
-            .cv-left, .cv-right {width: 100%; min-width: unset; border-radius: 0;}
-            .cv-right {padding: 28px 14px;}
+            .cv-wrapper {
+                flex-direction: column;
+            }
+
+            .cv-left,
+            .cv-right {
+                width: 100%;
+                min-width: unset;
+                border-radius: 0;
+            }
+
+            .cv-right {
+                padding: 28px 14px;
+            }
         }
-
-
-
     </style>
 </head>
+
 <body>
     <div class="cv-wrapper">
         <div class="cv-left">
             <img src="img/Image1.jpg" alt="photo de profil" class="profile-pic" />
             <h1>Manoel Abe</h1>
-            <div class="subtitle">Étudiant en Cybersécurité & IA</div>
+            <div class="subtitle">
+                Étudiant Ingénieur Cybersécurité & IA<br />
+                Recherche d'alternance (rentrée sept. 2026)
+            </div>
             <div class="contact">
                 <div><i>📧</i> abemanoel08@gmail.com</div>
-                <div><i>📍</i> Paris 78019, France</div>
-                <div><i>📱</i> +33 0746389823</div>
-                <div><i>🔗</i> RS: @manoelabe08</div>
-                <div><i>🚘</i> Permis ABCDE</div>
-                <div class="socials">
+                <div><i>📍</i> Paris, France</div>
+                <div><i>📱</i> +33 07 46 38 98 23</div>
+                <div><i>🔗</i> @manoelabe08</div>
+            </div>
+
+            <div class="socials">
                 <div class="social-column">
                     <a href="https://www.linkedin.com/in/manoelabe08/" target="_blank" class="social-link">
                         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
                         LinkedIn
                     </a>
-                    <a href="https://www.behance.net/manoelabe1/" target="_blank" class="social-link">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1183/1183653.png" alt="Behance">
-                        Behance
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=+330746389823&text=Bonjour%20j'ai%20apprecier%20votre%20cv%20en%20ligne%20et%20je%20vous%20contacte%20pour%20une%20opportunites3" target="_blank" class="social-link">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-                        WhatsApp
+                    <a href="https://github.com/manoelabe08/" target="_blank" class="social-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub">
+                        GitHub
                     </a>
                 </div>
                 <div class="social-column">
-                    <a href="https://github.com/manoelabe08/" target="_blank" class="social-link">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub">
-                        MyGitHub
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=+330746389823&text=Bonjour%20j'ai%20apprecier%20votre%20cv%20en%20ligne%20et%20je%20vous%20contacte%20pour%20une%20opportunites3" target="_blank" class="social-link">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-                        WhatsApp
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=+330746389823&text=Bonjour%20j'ai%20apprecier%20votre%20cv%20en%20ligne%20et%20je%20vous%20contacte%20pour%20une%20opportunites3" target="_blank" class="social-link">
+                    <a href="https://api.whatsapp.com/send?phone=+330746389823&text=Bonjour%20j'ai%20apprécié%20votre%20CV%20en%20ligne%20et%20je%20vous%20contacte%20pour%20une%20opportunité"
+                        target="_blank" class="social-link">
                         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
                         WhatsApp
                     </a>
                 </div>
             </div>
-            </div>
+
             <div class="langues">
                 <h3>Langues</h3>
                 <div class="langue-bar">
                     <span class="langue-label">Français</span>
-                    <div class="bar-bg"><div class="bar-fg" style="width:100%;background:linear-gradient(90deg,#49dfba 70%,#3249a6 100%);"></div></div>
+                    <div class="bar-bg">
+                        <div class="bar-fg"
+                            style="width:100%;background:linear-gradient(90deg,#49dfba 70%,#3249a6 100%);"></div>
+                    </div>
                     <span class="bar-text">100%</span>
                 </div>
                 <div class="langue-bar">
                     <span class="langue-label">Anglais</span>
-                    <div class="bar-bg"><div class="bar-fg" style="width:35%;"></div></div>
-                    <span class="bar-text">35%</span>
-                </div>
-                <div class="langue-bar">
-                    <span class="langue-label">Allemand</span>
-                    <div class="bar-bg"><div class="bar-fg" style="width:20%;background:#b2c7da;"></div></div>
-                    <span class="bar-text">20%</span>
+                    <div class="bar-bg">
+                        <div class="bar-fg" style="width:60%;"></div>
+                    </div>
+                    <span class="bar-text">Tech.</span>
                 </div>
             </div>
-    <div class="langues">
-    <h3>Compétences</h3>
-    <ul class="competences-list skills-soft">
-        <span class="competences-li" data-percent="70">
-            Cybersécurité
-            <svg viewBox="0 0 36 36" class="progress-circle">
-                <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
-                <circle class="cbar" cx="18" cy="18" r="15.9155" />
-            </svg>
-        </span>
-        <span class="competences-li" data-percent="70">
-            Programmation web, CMS
-            <svg viewBox="0 0 36 36" class="progress-circle">
-                <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
-                <circle class="cbar" cx="18" cy="18" r="15.9155" />
-            </svg>
-        </span>
-        <span class="competences-li" data-percent="70">
-            Infographie
-            <svg viewBox="0 0 36 36" class="progress-circle">
-                <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
-                <circle class="cbar" cx="18" cy="18" r="15.9155" />
-            </svg>
-        </span>
-        <span class="competences-li" data-percent="70">
-            Administration de réseaux
-            <svg viewBox="0 0 36 36" class="progress-circle">
-                <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
-                <circle class="cbar" cx="18" cy="18" r="15.9155" />
-            </svg>
-        </span>
-        <span class="competences-li" data-percent="70">
-            Sécurité électronique
-            <svg viewBox="0 0 36 36" class="progress-circle">
-                <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
-                <circle class="cbar" cx="18" cy="18" r="15.9155" />
-            </svg>
-        </span>
-    </ul>
-</div>
-<a class="download-cv-action" href="CV-MANOEL-ABE.pdf" download="CV-MANOEL-ABE.pdf">Télécharger mon CV</a>
 
+            <div class="langues">
+                <h3>Compétences clés</h3>
+                <ul class="competences-list skills-soft">
+                    <span class="competences-li" data-percent="85">
+                        Cybersécurité (SOC, audit, sécurité IoT)
+                        <svg viewBox="0 0 36 36" class="progress-circle">
+                            <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
+                            <circle class="cbar" cx="18" cy="18" r="15.9155" />
+                        </svg>
+                    </span>
+                    <span class="competences-li" data-percent="80">
+                        Réseaux & Systèmes (TCP/IP, Cisco, Windows/Linux)
+                        <svg viewBox="0 0 36 36" class="progress-circle">
+                            <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
+                            <circle class="cbar" cx="18" cy="18" r="15.9155" />
+                        </svg>
+                    </span>
+                    <span class="competences-li" data-percent="75">
+                        Développement web (HTML, CSS, PHP, SQL)
+                        <svg viewBox="0 0 36 36" class="progress-circle">
+                            <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
+                            <circle class="cbar" cx="18" cy="18" r="15.9155" />
+                        </svg>
+                    </span>
+                    <span class="competences-li" data-percent="70">
+                        Python (scripting, automatisation)
+                        <svg viewBox="0 0 36 36" class="progress-circle">
+                            <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
+                            <circle class="cbar" cx="18" cy="18" r="15.9155" />
+                        </svg>
+                    </span>
+                    <span class="competences-li" data-percent="70">
+                        Virtualisation & systèmes (VM, Windows Server, Linux)
+                        <svg viewBox="0 0 36 36" class="progress-circle">
+                            <circle class="cbar-bg" cx="18" cy="18" r="15.9155" />
+                            <circle class="cbar" cx="18" cy="18" r="15.9155" />
+                        </svg>
+                    </span>
+                </ul>
+            </div>
 
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <div class="certif-item">
+                    <div class="certif-item-logo">A</div>
+                    <div class="certif-item-content">
+                        <span class="certif-title">MOOC ANSSI</span>
+                        <span class="certif-org">SecNumAcadémie</span>
+                    </div>
+                </div>
+                <div class="certif-item">
+                    <div class="certif-item-logo">C</div>
+                    <div class="certif-item-content">
+                        <span class="certif-title">Cisco NetAcad</span>
+                        <span class="certif-org">Cybersecurity</span>
+                    </div>
+                </div>
+                <div class="certif-item">
+                    <div class="certif-item-logo">E</div>
+                    <div class="certif-item-content">
+                        <span class="certif-title">ESATIC</span>
+                        <span class="certif-org">Certificats spécialisés</span>
+                    </div>
+                </div>
+                <div class="certif-item">
+                    <div class="certif-item-logo">S</div>
+                    <div class="certif-item-content">
+                        <span class="certif-title">Coursera</span>
+                        <span class="certif-org">Analyste SOC</span>
+                    </div>
+                </div>
+            </div>
+
+            <a class="download-cv-action" href="CV-MANOEL-ABE-ALTERNANCE.pdf" download="CV-MANOEL-ABE-ALTERNANCE.pdf">
+                Télécharger mon CV
+            </a>
         </div>
 
         <div class="cv-right">
             <div class="section profil">
-                Passionné par la sécurité des systèmes d'information, aspirant analyste SOC, très intéressé par la sécurité des réseaux, des applications, l’IoT, le web et l’IA.
+                Passionné par la sécurité des systèmes d'information et l'intelligence artificielle, avec une expérience
+                en administration de systèmes et réseaux, recherche une alternance pour renforcer les compétences en
+                sécurité défensive (SOC), audit et sécurisation des infrastructures.
             </div>
+
             <div class="section">
                 <h2>Formation</h2>
                 <ul class="list-cv">
@@ -537,8 +644,8 @@
                             <img src="img/eseo.jpg" alt="logo ESEO">
                         </span>
                         <div>
-                            <span class="formation-title">Sept. 2025 - présent – ESEO Paris Vélizy</span>
-                            <span class="formation-date">Cycle Ingénieur IA & Cybersécurité</span>
+                            <span class="formation-title">Cycle Ingénieur Cybersécurité & IA</span>
+                            <span class="formation-date">ESEO Paris-Vélizy – 2025 – Présent</span>
                         </div>
                     </li>
                     <li class="cv-bullet">
@@ -546,8 +653,9 @@
                             <img src="img/uvci.png" alt="logo UVCI" />
                         </span>
                         <div>
-                            <span class="formation-title">2018-2022 – Univ. Virtuelle de Côte d’Ivoire</span>
-                            <span class="formation-date">Maîtrise Bac+4 Cybersécurité & IoT, Licence Réseaux et Sécurité Informatique, Mention Assez Bien</span>
+                            <span class="formation-title">Maîtrise (Bac+4) Cybersécurité & IoT</span>
+                            <span class="formation-date">Université Virtuelle de Côte d'Ivoire – 2018 – 2022</span>
+                            <div class="xp-subtitle">Licence Réseaux et Sécurité Informatique, mention Assez Bien.</div>
                         </div>
                     </li>
                 </ul>
@@ -558,150 +666,165 @@
                 <ul class="list-cv">
                     <li class="cv-bullet">
                         <span class="circle">
-                            <img src="img/mbb.jpg" alt="logo informatique" />
+                            <img src="img/sah.png" alt="logo SAH" />
                         </span>
                         <div>
-                            <span class="xp-title">Chef du service informatique</span>
-                            <span class="xp-date">EPV Bon Berger Abobo, sept. 2022 - juin 2025</span>
-                            <div class="xp-subtitle">Administration et gestion du système informatique de l’établissement.</div>
+                            <span class="xp-title">Analyste SOC stagiaire</span>
+                            <span class="xp-date">SAH Analytics International, Abidjan – Mai 2025 – Juil. 2025</span>
+                            <div class="xp-subtitle">
+                                Surveillance des alertes de sécurité via SIEM, analyse et qualification des incidents de
+                                niveau 1, rédaction de rapports d'incidents et participation à la veille sur les
+                                menaces.
+                            </div>
                         </div>
                     </li>
+
                     <li class="cv-bullet">
                         <span class="circle">
-                            <img src="img/cocan.jpg" alt="logo commission" />
+                            <img src="img/mbb.jpg" alt="logo EPV Bon Berger" />
                         </span>
                         <div>
-                            <span class="xp-title">Volontaire - Commission NTIC</span>
-                            <span class="xp-date">COCAN2023, 2023-2024</span>
-                            <div class="xp-subtitle">Assistance à la mise en place d'infrastructures technologiques et gestion des systèmes de communication durant la compétition.</div>
+                            <span class="xp-title">Responsable du service informatique</span>
+                            <span class="xp-date">EPV Bon Berger, Abidjan – 2023 – 2025</span>
+                            <div class="xp-subtitle">
+                                Administration et sécurisation du parc informatique, gestion des droits d'accès,
+                                maintenance du réseau local, support utilisateurs et gestion des sauvegardes.
+                            </div>
                         </div>
                     </li>
+
                     <li class="cv-bullet">
                         <span class="circle">
-                            <img src="img/lba.png" alt="logo web" />
+                            <img src="img/cocan.jpg" alt="logo CAN 2023" />
                         </span>
                         <div>
-                            <span class="xp-title">Chargé de création / Admin site web</span>
-                            <span class="xp-date">La Boutique d’Adjamé, fév. - nov. 2022</span>
-                            <div class="xp-subtitle">Création et administration du site WordPress.</div>
+                            <span class="xp-title">Membre Commission NTIC (Volontaire)</span>
+                            <span class="xp-date">Coupe d'Afrique des Nations 2023, Abidjan – 2023 – 2024</span>
+                            <div class="xp-subtitle">
+                                Déploiement et sécurisation des infrastructures réseaux temporaires, assistance à la
+                                gestion des systèmes de communication critiques pour l'événement.
+                            </div>
                         </div>
                     </li>
+
                     <li class="cv-bullet">
                         <span class="circle">
-                            <img src="img/aks.jpg" alt="logo réseaux" />
+                            <img src="img/aks.jpg" alt="logo AK Security" />
                         </span>
                         <div>
-                            <span class="xp-title">Technicien Réseaux</span>
-                            <span class="xp-date">AK SECURITY, avr. - août 2021</span>
-                            <div class="xp-subtitle">Installation de caméras, visiophonie, câblage informatique, administration systèmes de sécurité électronique.</div>
-                        </div>
-                    </li>
-                    <li class="cv-bullet">
-                        <span class="circle">
-                            <img src="img/fjn.jpg" alt="logo infographie" />
-                        </span>
-                        <div>
-                            <span class="xp-title">Infographiste / Dév. web</span>
-                            <span class="xp-date">Fondation Jeunesse Numérique, 2019-2021</span>
-                            <div class="xp-subtitle">Création identité visuelle (logo, cartes, sites, affiches, maquettes mobiles, e-learning, etc.)</div>
-                        </div>
-                    </li>
-                    <li class="cv-bullet">
-                        <span class="circle">
-                            <img src="img/ureport.png" alt="logo bénévolat" />
-                        </span>
-                        <div>
-                            <span class="xp-title">Bénévole - U-REPORT</span>
-                            <span class="xp-date">mars 2018 - juin 2019</span>
-                            <div class="xp-subtitle">Sensibilisation citoyenne, initiateur de la Journée du Numérique au Féminin.</div>
-                        </div>
-                    </li>
-                    <li class="cv-bullet">
-                        <span class="circle">
-                            <img src="img/lyma1.jpg" alt="logo club info" />
-                        </span>
-                        <div>
-                            <span class="xp-title">Président Club Informatique</span>
-                            <span class="xp-date">Lycée Moderne 1 Abobo, mars 2018 - juin 2019</span>
-                            <div class="xp-subtitle">Organisation, formation et gestion de projets de programmation et développement.</div>
+                            <span class="xp-title">Technicien Réseaux & Sécurité</span>
+                            <span class="xp-date">AK Security, Abidjan – Avr. 2021 – Août 2021</span>
+                            <div class="xp-subtitle">
+                                Installation et configuration de systèmes de vidéosurveillance IP/analogique, câblage
+                                structuré, mise en place de contrôle d'accès et administration des systèmes de sécurité
+                                électronique.
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
 
-<!-- Ajoutez ici la partie Projets / Réalisations si souhaitée -->
-              <!-- Projets / Réalisations -->
-            <!-- <div class="projects-section">
+            <div class="section">
+                <h2>Compétences techniques détaillées</h2>
+                <ul class="list-cv">
+                    <li class="cv-bullet">
+                        <span class="circle">🛡️</span>
+                        <div>
+                            <span class="xp-title">Cybersécurité & SOC</span>
+                            <div class="xp-subtitle">
+                                Analyse de risques, firewalling, SIEM (surveillance), sécurité IoT, OWASP, détection et
+                                qualification d'incidents.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cv-bullet">
+                        <span class="circle">🌐</span>
+                        <div>
+                            <span class="xp-title">Réseaux & Systèmes</span>
+                            <div class="xp-subtitle">
+                                TCP/IP, Routing & Switching (Cisco), VLAN, VPN, Wireshark, Windows Server (AD, DNS,
+                                DHCP), Linux (Ubuntu/Debian), virtualisation.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cv-bullet">
+                        <span class="circle">💻</span>
+                        <div>
+                            <span class="xp-title">Développement & Scripting</span>
+                            <div class="xp-subtitle">
+                                Python (scripting), HTML5/CSS3, PHP, SQL, outils web et automatisation orientés
+                                sécurité.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Projets (optionnel, à adapter à tes vrais projets si besoin) -->
+            <!--
+            <div class="projects-section">
                 <h2 class="projects-title">Projets / Réalisations</h2>
                 <div class="projects-grid">
                     <div class="project-card">
                         <img src="image1.jpg" alt="Projet 1" />
-                        <div class="project-desc">Détection d'intrusions IoT - Application Python pour monitorer les accès sur réseau domotique.</div>
+                        <div class="project-desc">
+                            Détection d'intrusions IoT - Script Python pour monitorer les accès sur un réseau domotique et générer des alertes.
+                        </div>
                         <button class="voir-plus-btn" onclick="openPopup(0)">Voir plus</button>
                     </div>
                     <div class="project-card">
                         <img src="image2.jpg" alt="Projet 2" />
-                        <div class="project-desc">Site portail pour association sportive - WordPress, système sécurisé pour gestion des membres.</div>
+                        <div class="project-desc">
+                            Portail web sécurisé pour association - Authentification, gestion des membres et durcissement de la configuration.
+                        </div>
                         <button class="voir-plus-btn" onclick="openPopup(1)">Voir plus</button>
                     </div>
                     <div class="project-card">
                         <img src="image3.jpg" alt="Projet 3" />
-                        <div class="project-desc">Création d'un bot analyste de fichiers logs pour archiver et alerter sur cybermenaces.</div>
+                        <div class="project-desc">
+                            Bot d'analyse de logs - Analyse de journaux systèmes et export d'alertes pour suivi SOC.
+                        </div>
                         <button class="voir-plus-btn" onclick="openPopup(2)">Voir plus</button>
                     </div>
                 </div>
             </div>
+            -->
         </div>
-    </div>-->
-    <!-- Popup -->
+    </div>
+
     <div id="popup-overlay" class="popup-overlay">
         <div class="popup-content" id="popup-content"></div>
         <div class="close-popup"><button onclick="closePopup()">Fermer</button></div>
     </div>
+
     <script>
         const descriptions = [
-            "Projet : Détection d'intrusions IoT. Développement d'une application Python pour surveiller, logger et réagir automatiquement aux tentatives suspectes sur le réseau domotique.",
-            "Projet : Site association sportive. Réalisation d'un portail WordPress avec gestion d'accès, profils membres et sécurité renforcée des données personnelles.",
-            "Projet : Bot analyste de logs. Conception d'un bot Python capable d'analyser des logs système, détecter les incidents et générer des alertes pour suivi SOC."
+            "Projet : Détection d'intrusions IoT. Développement d'un script Python pour surveiller et logger les tentatives suspectes sur un réseau domotique.",
+            "Projet : Portail web sécurisé. Mise en place d'un site avec gestion d'accès, durcissement de la configuration et protection des données.",
+            "Projet : Bot analyste de logs. Conception d'un script pour analyser des logs système, détecter des anomalies et générer des rapports pour un SOC."
         ];
+
         function openPopup(idx) {
             document.getElementById('popup-content').innerText = descriptions[idx];
             document.getElementById('popup-overlay').style.display = 'flex';
         }
+
         function closePopup() {
             document.getElementById('popup-overlay').style.display = 'none';
         }
 
-
-         // Progress Bar
-      document.querySelectorAll(".skills-prog ul span").forEach(function (el) {
-        let percent = el.getAttribute("data-percent");
-        el.querySelector(".bar").style.width = percent + "%";
-      });
-
-      // Software Skills
-      document.querySelectorAll(".skills-soft ul li").forEach(function (el) {
-        let percent = el.getAttribute("data-percent");
-        let r = el.querySelector(".cbar").r.baseVal.value;
-        let c = Math.PI * (r * 2);
-        let pct = ((100 - percent) / 100) * c;
-        el.querySelector(".cbar").style.strokeDashoffset = pct;
-        el.querySelector(".cbar").style.strokeDasharray = c;
-      });
-document.querySelectorAll(".skills-soft span").forEach(function (el) {
-    let percent = el.getAttribute("data-percent");
-    let circle = el.querySelector(".cbar");
-    if (circle) {
-        const r = circle.r.baseVal.value;
-        const c = 2 * Math.PI * r;
-        const pct = ((100 - percent) / 100) * c;
-        circle.style.strokeDasharray = c;
-        circle.style.strokeDashoffset = pct;
-    }
-});
-
+        document.querySelectorAll(".skills-soft span").forEach(function (el) {
+            let percent = el.getAttribute("data-percent");
+            let circle = el.querySelector(".cbar");
+            if (circle) {
+                const r = circle.r.baseVal.value;
+                const c = 2 * Math.PI * r;
+                const pct = ((100 - percent) / 100) * c;
+                circle.style.strokeDasharray = c;
+                circle.style.strokeDashoffset = pct;
+            }
+        });
     </script>
-        </div>
-    </div>
 </body>
+
 </html>
